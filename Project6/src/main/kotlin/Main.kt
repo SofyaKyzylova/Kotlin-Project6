@@ -1,5 +1,3 @@
-import java.util.Scanner
-
 open abstract class Zoo
 {
     abstract var name: String
