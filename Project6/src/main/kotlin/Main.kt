@@ -116,7 +116,6 @@ fun main() {
 
     println("Выберете животное из списка для вывода информации о нем:")
     var numberInZoo: Int = 0
-    //var stopNum: String = " "
 
     while(numberInZoo == 0 || numberInZoo < 1 || numberInZoo > 7)
     {
@@ -131,30 +130,4 @@ fun main() {
         }
     }
     zoo[numberInZoo - 1].info()
-
-    /*
-    while(!stopNum!!.equals("Exit", ignoreCase = true))
-    {
-        var inputStr = readln()!!
-
-        while(numberInZoo == 0 || numberInZoo < 1 || numberInZoo > 7)
-        {
-            try {
-                numberInZoo = inputStr.toInt()
-            }
-            catch (e: NumberFormatException)
-            {
-                numberInZoo = 0
-                println("Вы ввели неверное значение. Пожалуйста, попробуйте еще раз.")
-            }
-            if(numberInZoo < 1 || numberInZoo > 7)
-                println("Вы ввели неверное значение. Пожалуйста, попробуйте еще раз.")
-        }
-        zoo[numberInZoo - 1].info()
-
-        println("Выберете животное из списка для вывода информации о нем:")
-        println("Для выхода введите 'exit', для продолжения введите любую строку")
-        var str = Scanner (System.`in`)
-        stopNum = str.nextLine()
-    }*/
 }
